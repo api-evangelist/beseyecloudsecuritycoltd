@@ -1,23 +1,58 @@
 aid: beseyecloudsecuritycoltd
+
 name: Beseyecloudsecuritycoltd
-description: 'Beseyecloudsecuritycoltd is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Beseyecloudsecuritycoltd is a cloud security company specializing in advanced threat detection and automated response solutions for enterprise environments. The firm offers a suite of APIs that enable integration of security telemetry, real‑time alerting, and policy enforcement into customers’ existing security operations platforms. Founded to address the growing need for scalable, AI‑driven security automation, Beseyecloudsecuritycoltd serves financial services, healthcare, and technology sectors worldwide.'
+
 url: https://raw.githubusercontent.com/api-evangelist/beseyecloudsecuritycoltd/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Security
+- Cloud
+- AI
+- API
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/beseyecloudsecuritycoltd-hosts.yml
+- type: DomainSecurity
+  url: security/beseyecloudsecuritycoltd-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/beseyecloudsecuritycoltd
+  url: https://www.beseye.com
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI, AsyncAPI, GraphQL, or other machine‑readable contract was found at the API host (api.beseye.com) after probing common spec endpoints.
+  evidence:
+    - url: https://api.beseye.com/openapi.json
+      status: 000
+  checked: '2026-09-27'
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
